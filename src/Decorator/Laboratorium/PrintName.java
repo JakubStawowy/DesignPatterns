@@ -18,7 +18,7 @@ public class PrintName implements NameSurname{
         return name+" "+surname;
     }
     public static void main(String[] args){
-        NameSurname n = new PrintNameDecorated(new PrintNameDecorated(new PrintName("John","Snow)));
+        NameSurname n = new PrintNameDecorated(new PrintNameDecorated(new PrintName("John","Snow")));
         System.out.println(n.get());
     }
 }
